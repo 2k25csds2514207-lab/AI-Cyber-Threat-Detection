@@ -30,3 +30,29 @@ Every alert should contain:
 | Encrypted Malware | Suspicious TLS/QUIC metadata |
 | Port Scanning | Many destination ports/hosts |
 | Data Exfiltration | Unusual outbound data volume |
+### Test Case Details
+
+#### Test Case 1: Normal Traffic
+- Input: Normal network traffic
+- Expected Output: No threat detected
+- Expected Severity: Low
+
+#### Test Case 2: DDoS
+- Input: High-volume repeated requests
+- Expected Output: DDoS threat detected
+- Expected Severity: High
+
+#### Test Case 3: Port Scanning
+- Input: Multiple connection attempts to different ports
+- Expected Output: Port scanning detected
+- Expected Severity: Medium
+
+#### Test Case 4: DGA / DNS Tunnelling
+- Input: Suspicious DNS request patterns
+- Expected Output: DNS tunnelling detected
+- Expected Severity: High
+
+#### Test Case 5: Data Exfiltration
+- Input: Unusual outbound data transfer
+- Expected Output: Data exfiltration detected
+- Expected Severity: High
