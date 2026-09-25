@@ -56,3 +56,34 @@ Every alert should contain:
 - Input: Unusual outbound data transfer
 - Expected Output: Data exfiltration detected
 - Expected Severity: High
+- ## Expected Outputs
+
+### DDoS
+- Alert should be generated for unusually high traffic volume.
+- Threat class should be identified as DDoS.
+- Confidence score should be present.
+
+### Botnet C2
+- Alert should be generated for suspicious periodic communication.
+- Threat class should be identified as Botnet C2.
+- Supporting evidence should be present.
+
+### DGA / DNS Tunnelling
+- Alert should be generated for suspicious DNS activity.
+- Threat class should be identified correctly.
+- Confidence score should be present.
+
+### Encrypted Malware
+- Alert should be generated for suspicious encrypted traffic.
+- Threat class should be identified as Encrypted Malware.
+- Supporting evidence should be present.
+
+### Port Scanning
+- Alert should be generated for multiple port connection attempts.
+- Threat class should be identified as Port Scanning.
+- Severity should be present.
+
+### Data Exfiltration
+- Alert should be generated for unusual outbound data transfer.
+- Threat class should be identified as Data Exfiltration.
+- Supporting evidence should be present.
