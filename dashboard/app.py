@@ -82,6 +82,41 @@ st.info(
 
 st.markdown("---")
 
+# ---------- DASHBOARD METRICS ----------
+
+st.subheader("System Overview")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric(
+        label="Total Flows",
+        value="128,462",
+        delta="12% vs previous 24h"
+    )
+
+with col2:
+    st.metric(
+        label="Threats Detected",
+        value="2,843",
+        delta="8% vs previous 24h"
+    )
+
+with col3:
+    st.metric(
+        label="High / Critical Alerts",
+        value="412",
+        delta="15%",
+        delta_color="inverse"
+    )
+
+with col4:
+    st.metric(
+        label="Average Confidence",
+        value="91.7%",
+        delta="2%"
+    )
+
 # ---------- PLACEHOLDER SECTIONS ----------
 
 if page == "Overview":
